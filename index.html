@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Equipos</title>
+</head>
+<body>
+  <div class="layout">
+    <div class="panel">
+      <h1>Generador de Equipos</h1>
+      <p class="subtitle">Agrega 10 jugadores</p>
+
+      <div class="input-row">
+        <input type="text" id="playerInput" placeholder="Nombre del jugador" maxlength="30">
+        <button class="btn-add" id="btnAdd">+</button>
+      </div>
+      <div class="counter"><span id="count">0</span> / 10</div>
+
+      <div class="player-list" id="playerList"></div>
+
+      <div class="error" id="error"></div>
+
+      <div class="actions">
+        <button class="btn-generate" id="btnGenerate" disabled>Generar Equipos</button>
+        <button class="btn-reshuffle" id="btnReshuffle">Volver a sortear</button>
+        <button class="btn-reset" id="btnReset">Reiniciar todo</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-lines">
+        <div class="field-center"></div>
+        <div class="field-center-dot"></div>
+      </div>
+      <div class="field-middle"></div>
+      <div class="field-box-left"></div>
+      <div class="field-box-right"></div>
+      <div class="field-goal-left"></div>
+      <div class="field-goal-right"></div>
+
+      <div class="field-empty" id="fieldEmpty">
+        Agrega 10 jugadores y presiona<br>"Generar Equipos" para sortear
+      </div>
+
+      <div class="field-teams" id="fieldTeams">
+        <div class="field-half" id="teamA"></div>
+        <div class="field-half" id="teamB"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
